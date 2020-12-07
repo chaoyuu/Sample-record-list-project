@@ -11,7 +11,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/index.css">
-    <title>Hello World</title>
+    <title>To do list</title>
 
     <link rel="stylesheet" href="themes/demoApp.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
@@ -74,10 +74,10 @@
                 <form>
                          <label for="userName">User Name</label>
                          <input type="text" name="newUserName" id="newUserName" value="">
-                     <label for="password">Passord</label>
+                     <label for="password">Password</label>
                          <input type="password" data-clear-btn="false" name="password" id="password" value=""
                         autocomplete="off">
-                         <label for="password2">Confrim Passord</label>
+                         <label for="password2">Confrim Password</label>
                          <input type="password" data-clear-btn="false" name="newPassword" id="newPassword" value=""
                         autocomplete="off">
 
@@ -361,7 +361,28 @@
                 
 
                 <span id='welcome_msg'>Welcome ________</span>
-
+                <header>
+                    <section>
+                   
+                    <input type ="text" name="title" id ="title" placeholder="AddTodo" required>
+                </section>
+                </header>
+                <article>
+                    <section>
+                        <h2>Ongoing <span id="todo-count"></span></h2>
+                        <ol id="to-list" class="demo-box">
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <p></p> <a href="#"></a>
+                            </li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2> Aready finish<span id ="done-count"></span></h2>
+                        <ul id="done-list"></ul>
+                    </section>
+                </article>
+             
             </div>
 
 
