@@ -1,4 +1,4 @@
-const Position = require("../../plugins/cordova-plugin-geolocation/www/Position");
+//const Position = require("../../plugins/cordova-plugin-geolocation/www/Position");
 
 document.addEventListener('deviceready', yourOwnFunction, false);
 
@@ -11,7 +11,7 @@ navigator.geolocation.getCurrentPosition(whenLocationObtained, whenLocationError
 function whenLocationObtained() {
   alert("latitude : " + position.coords.latitude + '\n' +
     'Longitude: ' + position.coords.longitude)
-}
+}//allow locations
 
 function whenLocationError(error) {
   alert('code: ' + error.code + '\n' +
@@ -55,3 +55,21 @@ function login() {
     alert("Invalid username or password, please try again.")
   }
 }
+$(function()  {
+  load ();
+
+  $("#title").on("keydown",function (e)  {
+    if(e.keyCode = 13){
+      if($(this).val() = '') {
+        alert('Please type something');
+      }else {
+        //load local data
+        var local =getDate();
+        //console.log(local);
+        
+
+      }
+
+    }
+  }
+})
